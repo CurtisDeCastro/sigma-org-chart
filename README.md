@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Org Chart Plugin
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is an interactive Org Chart plugin that visualizes organizational structures using your data. It is designed to be user-friendly and customizable, allowing you to explore and understand your organization's hierarchy at a glance.
 
-## Available Scripts
+## How It Works
 
-In the project directory, you can run:
+- **Data Driven**: The org chart is generated from your data source. Each entity (person, team, etc.) is represented as a node, and relationships (such as manager or parent) are visualized as connections.
+- **Visual Representation**: Each node can display an icon or image, a label, and additional information such as position, area, or location.
+- **Legend**: A legend at the bottom of the chart shows unique icons and their labels for easy reference.
 
-### `yarn start`
+## Using the Org Chart
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. **Load Your Data**: The plugin automatically loads data from the configured source. Make sure your data includes at least the following columns:
+   - Name or ID
+   - Parent ID (to define hierarchy)
+   - Position or Role
+   - Area or Department
+   - Image URL (optional, for profile pictures or icons)
+   - Image Label (optional, for legend)
+   - Location (optional)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+2. **Explore the Chart**:
+   - The chart will render automatically based on your data.
+   - You can visually explore the hierarchy, see reporting lines, and identify teams or departments.
+   - Hover over nodes to see more details if available.
 
-### `yarn test`
+3. **Legend**:
+   - At the bottom of the chart, a legend displays all unique icons/images used in the chart, along with their labels.
+   - This helps you quickly identify roles, departments, or other categories represented by icons.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Customization
 
-### `yarn build`
+- **Data Columns**: You can customize which columns are used for names, images, labels, etc., by configuring the plugin settings.
+- **Appearance**: The chart and legend are styled for clarity, but you can further customize the look and feel via CSS.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To use the plugin:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Install dependencies:
+   ```
+   yarn install
+   ```
+2. Start the development server:
+   ```
+   yarn start
+   ```
+   Open [http://localhost:3000](http://localhost:3000) to view the org chart in your browser.
 
-### `yarn eject`
+3. Build for production:
+   ```
+   yarn build
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Troubleshooting
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- If the chart does not display, check that your data source is correctly configured and includes the required columns.
+- For further help, contact your administrator or refer to the plugin documentation.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Enjoy exploring your organization's structure with the Org Chart Plugin!
